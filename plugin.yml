@@ -4,7 +4,6 @@ main: com.ben.firstplugin.Main
 author: Ben
 description: First Plugin
 commands:
-  config;
-  # hello:
-  #   aliases: [hi]
-  #   description: Good Test Command!
+  hello:
+    aliases: [hi]
+    description: Good Test Command!
