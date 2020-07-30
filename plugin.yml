@@ -3,7 +3,3 @@ name: FirstPlugin
 main: com.ben.firstplugin.Main
 author: Ben
 description: First Plugin
-commands:
-  hello:
-    aliases: [hi]
-    description: Good Test Command!
