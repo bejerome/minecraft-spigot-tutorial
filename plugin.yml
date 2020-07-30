@@ -1,0 +1,10 @@
+version: 1.1
+name: FirstPlugin
+main: com.ben.firstplugin.Main
+author: Ben
+description: First Plugin
+commands:
+  config;
+  # hello:
+  #   aliases: [hi]
+  #   description: Good Test Command!
