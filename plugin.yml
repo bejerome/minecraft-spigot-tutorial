@@ -4,4 +4,4 @@ main: com.ben.firstplugin.Main
 author: Ben
 description: First Plugin
 commands:
-  heal:
+  number:
