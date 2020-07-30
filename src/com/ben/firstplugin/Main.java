@@ -18,34 +18,28 @@ public class Main extends JavaPlugin implements Listener{
 		Bukkit.getPluginManager().registerEvents(this , this);
 	}
 	
-	@Override
-	public void onDisable() {
-		
-	}
+
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equals("hello")) {
+		
+		// create player object by casting sender
+		Player player = (Player) sender;
+		
+		if (cmd.getName().equals("config")) {
 			
-			//check if the sender is an instance of the player object
+			// get value from config yml file
 			
-			if (sender instanceof Player) {
-				
-				// create an instance of player
-				
-				Player player = (Player) sender;
-				
-			// send message
-				
-			player.sendMessage(ChatColor.DARK_RED + "Hello, " + ChatColor.GREEN + player.getName() + ChatColor.DARK_GRAY + " You Fuzzy Head");
+			String word = this.getConfig().getString("Word");
+			int number = this.getConfig().getInt("Number");
 			
-			// set player health to full
+			player.sendMessage(ChatColor.GRAY + "The word is " + ChatColor.GREEN + word + Colors.RED +  " and the number is " + number);
 			
-				player.setHealth(20.0);
 			} else {
-			System.out.println("You cannot use this command through console!");
+				
+				System.out.println("You cannot use this command through console!");
 			}
 			
-		}
+		
 		return false;
 		
 	}	
