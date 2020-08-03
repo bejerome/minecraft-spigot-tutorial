@@ -19,6 +19,10 @@ public class Main extends JavaPlugin {
 		
 		Bukkit.getPluginManager().registerEvents(new ToggleListener(), this);
 		
+		// create block listener
+		
+		Bukkit.getPluginManager().registerEvents(new BlockListener(), this);
+		
 		
 	}
 	
