@@ -15,7 +15,7 @@ public class Main extends JavaPlugin {
 		
 		Bukkit.getPluginManager().registerEvents(new PingListener(), this);
 		
-		// create an hologram
+		// create an toggle listener
 		
 		Bukkit.getPluginManager().registerEvents(new ToggleListener(), this);
 		

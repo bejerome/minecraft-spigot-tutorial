@@ -13,8 +13,12 @@ public class ToggleListener implements Listener {
 	
 	ArrayList<Player> enabled = new ArrayList<Player>();
 
+	@SuppressWarnings("deprecation")
+	
 	@EventHandler
 	public void onClick(PlayerInteractEvent e) {
+		
+		//set current player to variable player
 		Player player = e.getPlayer();
 		
 		if (player.getItemInHand().getType().equals(Material.NETHER_STAR)) {
